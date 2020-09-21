@@ -5,7 +5,7 @@ export const allMovies = (req: Request, res: Response) => {
 
 
   var filter =  {
-    // "poster": { $exists: true, $ne: null },
+    "poster": { $exists: true, $ne: null },
   };
 
   for ( let k in req.query ) {

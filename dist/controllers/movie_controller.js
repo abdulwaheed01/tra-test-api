@@ -7,7 +7,7 @@ exports.allMovies = void 0;
 var movie_1 = __importDefault(require("../models/movie"));
 exports.allMovies = function (req, res) {
     var filter = {
-    // "poster": { $exists: true, $ne: null },
+        "poster": { $exists: true, $ne: null },
     };
     for (var k in req.query) {
         if (k == 'year') {
